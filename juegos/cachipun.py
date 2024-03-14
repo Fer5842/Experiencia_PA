@@ -1,5 +1,4 @@
-def cachipun():
-    import random
+import random
 
 def cachipun(jugador):
     computadora = random.choice(["piedra","papel","tijera"])
