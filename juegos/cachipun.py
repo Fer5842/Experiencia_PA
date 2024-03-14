@@ -1,8 +1,8 @@
-import random
 def cachipun():
+    import random
     print("Bienvenido al juego Cachipun")
     print("Elige entre piedra, papel o tijera:")
-    jugador = input(str()).lower()
+    jugador = str(input()).lower()
     computadora = random.choice(["piedra","papel","tijera"])
     print("La computadora eligió:",computadora)
     while jugador == computadora:
@@ -10,16 +10,17 @@ def cachipun():
         return cachipun()
     if jugador == "piedra":
         if computadora == "papel":
-            return "Perdiste. Una computadora te gano :("
+            print("Perdiste. Una computadora te gano :(")
         else:
-            return "¡Felicitaciones! La computadora te dejó ganar :)"
+            print("¡Felicitaciones! La computadora te dejó ganar :)")
     if jugador == "papel":
         if computadora == "tijera":
-            return "Perdiste. Una computadora te gano :("
+            print("Perdiste. Una computadora te gano :(")
         else:
-            return "¡Felicitaciones! La computadora te dejó ganar :)"
+            print("¡Felicitaciones! La computadora te dejó ganar :)")
     if jugador == "tijera":
         if computadora == "piedra":
-            return "Perdiste. Una computadora te gano :("
+            print("Perdiste. Una computadora te gano :(")
         else:
-            return "¡Felicitaciones! La computadora te dejó ganar :)"
+            print("¡Felicitaciones! La computadora te dejó ganar :)")
+    pass
