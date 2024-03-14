@@ -3,6 +3,9 @@ def cachipun():
     print("Bienvenido al juego Cachipun")
     print("Elige entre piedra, papel o tijera:")
     jugador = str(input()).lower()
+    if jugador not in ["piedra","papel","tijera"]:
+        print("Palabra invalida")
+        return cachipun()
     computadora = random.choice(["piedra","papel","tijera"])
     print("La computadora eligió:",computadora)
     while jugador == computadora:
